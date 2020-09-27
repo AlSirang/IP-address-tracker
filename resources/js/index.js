@@ -28,11 +28,13 @@ const apiKey = "at_W4P8c8iMb5Q6OOpuE5spIgMlQy4gp";
 
 document.addEventListener("keydown", function (e) {
   if (e.code === "Enter") {
+    inputElement.classList.remove("empty-field");
     actionOnIPSubmit();
   }
 });
 // listen for user click Event
 submitBtnElement.addEventListener("click", () => {
+  inputElement.classList.remove("empty-field");
   actionOnIPSubmit();
 });
 
