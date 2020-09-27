@@ -10,7 +10,6 @@ body {
   width: 100%;
 }
 
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -39,7 +38,7 @@ body {
   margin-bottom: 20px;
 }
 
-#btn{
+#btn {
   padding: 10px;
   background: #001;
   border-radius: 0 10px 10px 0;
@@ -57,44 +56,48 @@ body {
   border: none;
 }
 
-
-.results{
+.results {
   display: none;
   background-color: #fff;
   color: #000;
   box-shadow: 0 5px 30px hsl(0, 0%, 17%);
   border-radius: 10px;
   padding: 2.5rem 3.5rem;
-  width: 85%;
-  height: 125px;
+  height: fit-content;
   position: relative;
   top: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
   z-index: 999;
 }
-
-#result-data{
+.show{
+  display: block;;
+  width: fit-content;
+}
+#result-data {
   display: flex;
   justify-content: space-between;
 }
-.row{
-  padding: 5px 0;
+.row {
+  padding: 5px 43px;
+  border-right: 1px solid gray;
 }
-.row h5{
+.row:last-child {
+  border-right: none;
+}
+.row h5 {
   text-transform: uppercase;
-  color:  #969696;
+  color: #969696;
   font-weight: 500;
   font-size: 13px;
 }
-.row h3{
+.row h3 {
   font-weight: 500;
   font-size: 25px;
 }
 /* main */
-
 
 /* map styling */
 #ipLocation {
@@ -102,8 +105,7 @@ body {
   min-height: 400px;
 }
 
-
-footer{
+footer {
   background: url("../images/pattern-bg.png") no-repeat center;
   background-size: cover;
   height: 60px;
@@ -125,22 +127,14 @@ footer{
   font-weight: 500;
 }
 
-@media(min-width: 761px ) and (max-width: 1050px){
-  .results{
-    width: 105%;
+@media (min-width: 761px) and (max-width: 1050px) {
+  .results {
     padding: 15px 13px 10px;
-  }
-  .row{
-    padding:0 43px;
-    border-right: 1px solid gray;
-  }
-  .row:last-child{
-    border-right: none;
   }
 }
 
-@media (max-width: 770px){
-  .results{
+@media (max-width: 770px) {
+  .results {
     height: fit-content;
     min-width: fit-content;
     max-width: 30rem;
@@ -148,20 +142,17 @@ footer{
     line-height: 1.5;
     padding: 25px 0;
   }
-  #result-data{
+  #result-data {
     display: block;
   }
-  .row{
-    padding:30px auto;
+  .row {
+    padding: 30px auto;
     border: none;
   }
 }
 
-
-
-
 /* Empty field */
-.empty-field{
-  border: 1px solid red ;
+.empty-field {
+  border: 1px solid red;
   background-color: #ffc2c2;
 }
