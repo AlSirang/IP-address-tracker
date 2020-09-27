@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./resources/images/favicon-32x32.png"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- leaflet stylesheet for map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- leaflet js -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="container">
+          <div class="title">
+            <h1 class="title-heading">IP Address Tracker</h1>
+          </div>
+          <div id="input-container">
+            <input
+              type="text"
+              name="ip"
+              id="ip"
+              class="input-field"
+              placeholder="Search for any IP address or domain"
+            />
+            <span id="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="3"
+                  d="M2 1l6 6-6 6"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="results">
+            <div id="result-data">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ipmap">
+        <!-- to dispaly map -->
+        <div id="ipLocation"></div>
+      </section>
+
+      
+    
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.frontendmentor.io/profile/AlSirang" target="_blank">Bashir Uddin</a>.
+      </div>
+    </footer>
+
+    <script src="./resources/js/index.js"></script>
+  </body>
+</html>

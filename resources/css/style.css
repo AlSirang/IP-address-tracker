@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../images/pattern-bg.png") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  height: 19rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title-heading {
+  font-weight: 400;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+#input-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#btn{
+  padding: 10px;
+  background: #001;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  max-width: 27rem;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+}
+
+
+.results{
+  display: none;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 5px 30px hsl(0, 0%, 17%);
+  border-radius: 10px;
+  padding: 2.5rem 3.5rem;
+  width: 85%;
+  height: 125px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  line-height: 2;
+  z-index: 999;
+}
+
+#result-data{
+  display: flex;
+  justify-content: space-between;
+}
+.row{
+  padding: 5px 0;
+}
+.row h5{
+  text-transform: uppercase;
+  color:  #969696;
+  font-weight: 500;
+  font-size: 13px;
+}
+.row h3{
+  font-weight: 500;
+  font-size: 25px;
+}
+/* main */
+
+
+/* map styling */
+#ipLocation {
+  height: 80vh;
+  min-height: 400px;
+}
+
+
+footer{
+  background: url("../images/pattern-bg.png") no-repeat center;
+  background-size: cover;
+  height: 60px;
+  padding: 20px 0 10px;
+  color: #fff;
+}
+/* footer */
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+
+::placeholder {
+  color: #001;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media(min-width: 761px ) and (max-width: 1050px){
+  .results{
+    width: 105%;
+    padding: 15px 13px 10px;
+  }
+  .row{
+    padding:0 43px;
+    border-right: 1px solid gray;
+  }
+  .row:last-child{
+    border-right: none;
+  }
+}
+
+@media (max-width: 770px){
+  .results{
+    height: fit-content;
+    min-width: fit-content;
+    max-width: 30rem;
+    top: 53%;
+    line-height: 1.5;
+    padding: 25px 0;
+  }
+  #result-data{
+    display: block;
+  }
+  .row{
+    padding:30px auto;
+    border: none;
+  }
+}
+
+
+
+
+/* Empty field */
+.empty-field{
+  border: 1px solid red ;
+  background-color: #ffc2c2;
+}
